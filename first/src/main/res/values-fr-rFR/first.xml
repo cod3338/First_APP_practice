@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_t_hello">Titre:</string>
+    <string name = "first_b_click"> cliquez sur </string>
+    <string name = "second_t_textview"> Cliquez pour désactiver </string>
+
+    <!-- ****** 中間有看到反斜線是跳脫字元的用法,不然顯示會有問題 ****** -->
+    <string name="first_t_input">Des données d\'entrée:</string>
+    <!-- ********************************************************** -->
+
+    <string name = "first_t_showtitle"> Afficher les résultats: </string>
+    <string name="first_b_save">boutique</string>
+    <string name = "second_t_title"> Données </string>
+    <string name = "second_item_t_title"> Détails du projet </string>
+    <string name = "second_item_t_id"> Id: </string>
+    <string name = "second_item_t_getid"> id d\'affichage </string>
+    <string name = "second_item_t_modify_date"> heure de modification: </string>
+    <string name = "second_item_t_insert_date"> durée de stockage: </string>
+    <string name = "second_item_t_insert_getdate"> afficher la durée de stockage </string>
+    <string name = "second_item_t_modify_getdate"> afficher l\'heure de modification </string>
+    <string name = "second_item_t_data"> Contenu des données: </string>
+    <string name = "second_item_e_showdata"> afficher le contenu des données </string>
+    <string name = "second_item_b_modify"> Modifier </string>
+    <string name = "second_item_b_delete"> Supprimer </string>
+</resources>

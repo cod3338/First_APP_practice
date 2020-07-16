@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_t_hello">按鈕展示:</string>
+    <string name="first_b_click">按一下</string>
+    <string name="second_t_textview">按一下關掉</string>
+    <string name="first_t_input">輸入資料:</string>
+    <string name="first_t_showtitle">顯示結果:</string>
+    <string name="first_b_save">儲存</string>
+    <string name="second_t_title">資料</string>
+    <string name="second_item_t_title">項目詳細資料</string>
+    <string name="second_item_t_id">Id:</string>
+    <string name="second_item_t_getid">顯示id</string>
+    <string name="second_item_t_modify_date">修改時間:</string>
+    <string name="second_item_t_insert_date">儲存時間:</string>
+    <string name="second_item_t_insert_getdate">顯示儲存時間</string>
+    <string name="second_item_t_modify_getdate">顯示修改時間</string>
+    <string name="second_item_t_data">資料內容:</string>
+    <string name="second_item_e_showdata">顯示資料內容</string>
+    <string name="second_item_b_modify">修改</string>
+    <string name="second_item_b_delete">刪除</string>
+</resources>

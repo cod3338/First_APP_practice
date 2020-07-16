@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azure"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/second_R_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/second_T_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/yellow"
+            android:onClick="click"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/second_t_textview"
+            android:textColor="@color/brown"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_T_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_T_textview"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:text="@string/second_t_title"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/second_L_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_T_title" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_R_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+        <TextView
+            android:id="@+id/second_item_T_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView"
+            android:background="@color/lavenderblush"
+            android:gravity="center_horizontal"
+            android:text="@string/second_item_t_title"
+            android:textColor="@color/black"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/second_item_t_id"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_getid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/second_item_T_id"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/second_item_T_id"
+            android:layout_toRightOf="@+id/second_item_T_id"
+            android:hint="@string/second_item_t_getid"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_insert_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_item_T_id"
+            android:layout_alignStart="@+id/second_item_T_id"
+            android:layout_alignLeft="@+id/second_item_T_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/second_item_t_insert_date"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_insert_getdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/second_item_T_insert_date"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/second_item_T_insert_date"
+            android:hint="@string/second_item_t_insert_getdate"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_modify_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_item_T_insert_date"
+            android:layout_alignStart="@+id/second_item_T_id"
+            android:layout_alignLeft="@+id/second_item_T_id"
+            android:layout_marginTop="10dp"
+            android:text="@string/second_item_t_modify_date"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_modify_getdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/second_item_T_modify_date"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/second_item_T_modify_date"
+            android:layout_toRightOf="@+id/second_item_T_modify_date"
+            android:hint="@string/second_item_t_modify_getdate"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/second_item_T_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_item_T_modify_date"
+            android:layout_alignStart="@+id/second_item_T_modify_date"
+            android:layout_alignLeft="@+id/second_item_T_modify_date"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/second_item_t_data"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:id="@+id/second_item_S_srv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/second_item_T_data"
+            android:layout_alignStart="@+id/second_item_T_data"
+            android:layout_alignLeft="@+id/second_item_T_data">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/second_item_E_showdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/second_item_e_showdata"
+                    android:inputType="text"
+                    android:textColor="@color/blue"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/second_item_B_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_item_S_srv"
+            android:layout_alignStart="@+id/second_item_S_srv"
+            android:layout_alignLeft="@+id/second_item_S_srv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/forestgreen"
+            android:onClick="modify_btn"
+            android:text="@string/second_item_b_modify"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/second_item_B_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/second_item_B_modify"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/red"
+            android:onClick="delete_btn"
+            android:text="@string/second_item_b_delete"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

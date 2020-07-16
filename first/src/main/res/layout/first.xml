@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:padding="10dp"
+    tools:context=".first">
+
+    <TextView
+        android:id="@+id/first_T_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/first_t_hello"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/first_B_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/first_T_hello"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/first_T_hello"
+        android:layout_toRightOf="@+id/first_T_hello"
+        android:background="@color/newgreen"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/first_b_click"
+        android:textColor="@color/newred"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/first_T_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_T_hello"
+        android:layout_alignStart="@+id/first_T_hello"
+        android:layout_alignLeft="@+id/first_T_hello"
+        android:layout_marginTop="30dp"
+        android:text="@string/first_t_input"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:id="@+id/first_SC_sview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/first_T_input"
+        android:layout_alignStart="@+id/first_T_input"
+        android:layout_alignLeft="@+id/first_T_input"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/first_E_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_T_input"
+                android:layout_alignStart="@+id/first_T_input"
+                android:layout_alignLeft="@+id/first_T_input"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/first_T_showtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_SC_sview"
+        android:layout_alignStart="@+id/first_T_hello"
+        android:layout_alignLeft="@+id/first_T_hello"
+        android:layout_marginTop="30dp"
+        android:text="@string/first_t_showtitle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/first_T_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/first_T_showtitle"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/first_T_showtitle"
+        android:layout_toRightOf="@+id/first_T_showtitle"
+        android:hint="處理結果"
+        android:textColor="@color/red"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/first_B_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_T_showtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/newgreen"
+        android:onClick="clicksave"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/first_b_save"
+        android:textColor="@color/newred"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_t_hello">标题:</string>
+    <string name="first_b_click">按一下</string>
+    <string name="second_t_textview">按一下关掉</string>
+    <string name="first_t_input">输入资料:</string>
+    <string name="first_t_showtitle">显示结果:</string>
+    <string name="first_b_save">储存</string>
+    <string name="second_t_title">资料</string>
+    <string name="second_item_t_title">项目详细资料</string>
+    <string name="second_item_t_id">Id:</string>
+    <string name="second_item_t_getid">显示id</string>
+    <string name="second_item_t_modify_date">修改时间:</string>
+    <string name="second_item_t_insert_date">储存时间:</string>
+    <string name="second_item_t_insert_getdate">显示储存时间</string>
+    <string name="second_item_t_modify_getdate">显示修改时间</string>
+    <string name="second_item_t_data">资料内容:</string>
+    <string name="second_item_e_showdata">显示资料内容</string>
+    <string name="second_item_b_modify">修改</string>
+    <string name="second_item_b_delete">删除</string>
+</resources>
