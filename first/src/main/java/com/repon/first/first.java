@@ -31,6 +31,8 @@ public class first extends AppCompatActivity {
 
         context = this;
         setviewCompoment(); //自定義
+
+
     }
 
     //自定義
