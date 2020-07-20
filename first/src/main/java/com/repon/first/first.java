@@ -6,11 +6,15 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import java.lang.ref.WeakReference;
 
 import static com.repon.first.first_obj.shorttoast;
 import static com.repon.first.first_obj.TAG;
@@ -22,12 +26,25 @@ public class first extends AppCompatActivity {
     TextView m_first_T_show;
     EditText m_first_E_input;
     Button m_first_B_click;
+    private static  class StaticHandler extends Handler{
+        private final WeakReference<first> mActivity;
 
+        public StaticHandler(first activity){
+            mActivity = new WeakReference<first>(activity);
+        }
+    }
 
+    public final StaticHandler mHandler = new StaticHandler(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first);
+
+        final ProgressBar progressBar = (ProgressBar)findViewById(R.id.progressBar);
+        DoLengthyWork work = new DoLengthyWork();
+        work.setmHandler(mHandler);
+        work.setmProgressBar(progressBar);
+        work.start();
 
         context = this;
         setviewCompoment(); //自定義
