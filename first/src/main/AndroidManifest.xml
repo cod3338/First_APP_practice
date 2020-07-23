@@ -10,15 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".First">
+        <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- 第二頁的畫面要寫進來 -->
+        </activity> <!-- The second Activity will be there. -->
         <activity
-            android:name=".Second"
+            android:name=".SecondActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

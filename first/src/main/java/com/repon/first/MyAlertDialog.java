@@ -4,7 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 
 
-//實做Dialog視窗
+//Implementation Dialog
 class MyAlertDialog extends AlertDialog {
 
     protected MyAlertDialog(Context context) {

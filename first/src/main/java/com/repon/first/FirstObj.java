@@ -11,7 +11,7 @@ import java.util.TimeZone;
 
 //共用method及全域變數
 public class FirstObj {
-    public static final String TAG = "repon=>"; //Log用
+    public static final String TAG = "Element Inc=>"; //Log用
     public static boolean uselog = false; //是否啟用log
     public static long exitTime = 0; //記綠離開時間
 

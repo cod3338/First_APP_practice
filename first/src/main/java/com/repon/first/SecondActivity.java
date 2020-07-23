@@ -34,7 +34,7 @@ import static com.repon.first.providers.firstDb.delete;
 import static com.repon.first.providers.firstDb.rawquery;
 import static com.repon.first.providers.firstDb.update;
 
-public class Second extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     Context context = this;
     RelativeLayout m_second_R_main, m_second_R_item;
@@ -43,8 +43,8 @@ public class Second extends AppCompatActivity {
     EditText m_second_item_E_showdata;
     ListView m_second_L_data;
     int datanum = 0; //記錄資料筆數
-    private ArrayList<String> mData = new ArrayList<>(); //暫存SQLite資料
-    private ArrayList<Map<String, Object>> mList = new ArrayList<>(); //暫存選項資料
+    private ArrayList<String> mData = new ArrayList<>(); //This SQLite data will be Temporary storage in the mData.
+    private ArrayList<Map<String, Object>> mList = new ArrayList<>(); //Temporary data.
 
 
 
@@ -53,12 +53,12 @@ public class Second extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second);
 
-        setupViewComponent(); //自定義
+        setupViewComponent(); //sub-Function
     }
 
-    //自定義
+    //sub-Function
     private void setupViewComponent() {
-        shorttoast(context,"開啟本頁!!Hello~");
+        shorttoast(context,"Hello~");
 
         m_second_R_main = findViewById(R.id.second_R_main); //主畫面Rel
         m_second_R_item = findViewById(R.id.second_R_item); //項目畫面Rel
@@ -159,11 +159,11 @@ public class Second extends AppCompatActivity {
 
     //標題按鈕監聽
     public void click(View view){
-        Second.this.finish(); //關掉本頁
+        SecondActivity.this.finish(); //關掉本頁
 
         //開啟第一頁
         Intent it = new Intent();
-        it.setClass(this, First.class);
+        it.setClass(this, FirstActivity.class);
         startActivity(it);
     }
 
@@ -259,7 +259,7 @@ public class Second extends AppCompatActivity {
 
             }else if (m_second_R_main.getVisibility() == View.VISIBLE){ //主畫面顯示時
                 Intent it = new Intent();
-                it.setClass(context, First.class);
+                it.setClass(context, FirstActivity.class);
                 startActivity(it); //執行跳頁
                 this.finish();
             }

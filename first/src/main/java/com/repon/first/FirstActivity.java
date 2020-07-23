@@ -20,17 +20,17 @@ import static com.repon.first.FirstObj.shorttoast;
 import static com.repon.first.FirstObj.TAG;
 import static com.repon.first.providers.firstDb.insert;
 
-public class First extends AppCompatActivity {
+public class FirstActivity extends AppCompatActivity {
 
     Context context;
     TextView m_first_T_show;
     EditText m_first_E_input;
     Button m_first_B_click;
     private static  class StaticHandler extends Handler{
-        private final WeakReference<First> mActivity;
+        private final WeakReference<FirstActivity> mActivity;
 
-        public StaticHandler(First activity){
-            mActivity = new WeakReference<First>(activity);
+        public StaticHandler(FirstActivity activity){
+            mActivity = new WeakReference<FirstActivity>(activity);
         }
     }
 
@@ -47,52 +47,52 @@ public class First extends AppCompatActivity {
         work.start();
 
         context = this;
-        setviewCompoment(); //自定義
+        setviewCompoment(); //sub-Function
 
 
     }
 
-    //自定義
+    //sub-Function
     @SuppressLint("SetTextI18n")
     private void setviewCompoment() {
-        m_first_B_click = findViewById(R.id.first_B_click); //按一下
-        m_first_E_input = findViewById(R.id.first_E_input); //輸入資料
-        m_first_T_show = findViewById(R.id.first_T_show); //儲存按鈕
+        m_first_B_click = findViewById(R.id.first_B_click); //Click it once.
+        m_first_E_input = findViewById(R.id.first_E_input); //Input data.
+        m_first_T_show = findViewById(R.id.first_T_show); //store
 
-        m_first_B_click.setOnClickListener(click); //跳頁按鈕監聽
+        m_first_B_click.setOnClickListener(click); //Jump to the 'Second' of Page.
     }
 
-    //跳頁按鈕監聽
+    //On button Click Listener. Jump to the 'Second' of Page.
     private Button.OnClickListener click = new Button.OnClickListener(){
 
         @Override
         public void onClick(View v) {
-            shorttoast(context,"按了一下按鈕，並更改了標題，然後跳頁了");
+            shorttoast(context,"Click the Button once, it will change the title, than goto 'Second'.");
 
-            //準備跳到第二頁
+            //Prepared before goto 'Second'.
             Intent it = new Intent();
-            it.setClass(First.this, Second.class);
+            it.setClass(FirstActivity.this, SecondActivity.class);
             startActivity(it);
-            First.this.finish(); //砍掉自己
-            Log.d(TAG,"結束第一頁");
+            FirstActivity.this.finish(); //Finished the 'First' activity
+            Log.d(TAG,"Finished the First Activity");
         }
     };
 
     //儲存按鈕
     public void clicksave(View view){
         String data = m_first_E_input.getText().toString().trim();
-        int i = 0; //sqlite儲存狀態:預設為0 = 不成功
+        int i = 0; //sqlite status:default number is 0 = failure
 
         if (data.length() > 0){
-            i = (int) insert(context, data); //寫入資料進SQLite
+            i = (int) insert(context, data); //Add those data to the SQLite.
         }
 
         String msg;
 
         if (i == 1)
-            msg = "儲存成功";
+            msg = "Success.";
         else
-            msg = "資料沒有存入";
+            msg = "Miss a data.";
 
         m_first_T_show.setText(msg);
         shorttoast(context, msg);
