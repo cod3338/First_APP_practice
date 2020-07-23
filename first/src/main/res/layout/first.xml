@@ -15,8 +15,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/first_t_hello"
-        android:textColor="@color/colorPrimary"
-        android:textSize="36sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/first_B_click"
@@ -26,12 +26,12 @@
         android:layout_marginLeft="20dp"
         android:layout_toEndOf="@+id/first_T_hello"
         android:layout_toRightOf="@+id/first_T_hello"
-        android:background="@color/newgreen"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#4C4D57"
+
         android:text="@string/first_b_click"
-        android:textColor="@color/newred"
-        android:textSize="24sp"
+        android:textColor="@color/snow"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
@@ -43,8 +43,8 @@
         android:layout_alignLeft="@+id/first_T_hello"
         android:layout_marginTop="30dp"
         android:text="@string/first_t_input"
-        android:textColor="@color/colorPrimary"
-        android:textSize="36sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <ScrollView
         android:id="@+id/first_SC_sview"
@@ -70,7 +70,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:background="@color/white"
-                android:textSize="36sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
     </ScrollView>
@@ -83,10 +83,10 @@
         android:layout_below="@id/first_SC_sview"
         android:layout_alignStart="@+id/first_T_hello"
         android:layout_alignLeft="@+id/first_T_hello"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="@string/first_t_showtitle"
-        android:textColor="@color/colorPrimary"
-        android:textSize="36sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/first_T_show"
@@ -98,22 +98,25 @@
         android:layout_toRightOf="@+id/first_T_showtitle"
         android:hint="處理結果"
         android:textColor="@color/red"
-        android:textSize="36sp" />
+        android:textSize="16sp" />
+
 
     <Button
         android:id="@+id/first_B_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/first_T_showtitle"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#4C4D57"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:background="@color/newgreen"
+
         android:onClick="clicksave"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="@string/first_b_save"
-        android:textColor="@color/newred"
-        android:textSize="24sp"
+        android:textColor="@color/snow"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <ProgressBar
