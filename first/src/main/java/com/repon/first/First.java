@@ -16,21 +16,21 @@ import android.widget.TextView;
 
 import java.lang.ref.WeakReference;
 
-import static com.repon.first.first_obj.shorttoast;
-import static com.repon.first.first_obj.TAG;
+import static com.repon.first.FirstObj.shorttoast;
+import static com.repon.first.FirstObj.TAG;
 import static com.repon.first.providers.firstDb.insert;
 
-public class first extends AppCompatActivity {
+public class First extends AppCompatActivity {
 
     Context context;
     TextView m_first_T_show;
     EditText m_first_E_input;
     Button m_first_B_click;
     private static  class StaticHandler extends Handler{
-        private final WeakReference<first> mActivity;
+        private final WeakReference<First> mActivity;
 
-        public StaticHandler(first activity){
-            mActivity = new WeakReference<first>(activity);
+        public StaticHandler(First activity){
+            mActivity = new WeakReference<First>(activity);
         }
     }
 
@@ -71,9 +71,9 @@ public class first extends AppCompatActivity {
 
             //準備跳到第二頁
             Intent it = new Intent();
-            it.setClass(first.this, second.class);
+            it.setClass(First.this, Second.class);
             startActivity(it);
-            first.this.finish(); //砍掉自己
+            First.this.finish(); //砍掉自己
             Log.d(TAG,"結束第一頁");
         }
     };

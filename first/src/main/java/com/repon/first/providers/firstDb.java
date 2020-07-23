@@ -10,8 +10,8 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 
 import static android.content.ContentValues.TAG;
-import static com.repon.first.first_obj.nowtime;
-import static com.repon.first.first_obj.uselog;
+import static com.repon.first.FirstObj.nowtime;
+import static com.repon.first.FirstObj.uselog;
 
 
 //SQLite資料庫設定

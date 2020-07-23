@@ -25,16 +25,16 @@ import java.util.Map;
 
 import static android.content.DialogInterface.BUTTON_NEGATIVE;
 import static android.content.DialogInterface.BUTTON_POSITIVE;
-import static com.repon.first.first_obj.exitTime;
-import static com.repon.first.first_obj.shorttoast;
-import static com.repon.first.first_obj.uselog;
-import static com.repon.first.first_obj.TAG;
+import static com.repon.first.FirstObj.exitTime;
+import static com.repon.first.FirstObj.shorttoast;
+import static com.repon.first.FirstObj.uselog;
+import static com.repon.first.FirstObj.TAG;
 import static com.repon.first.providers.firstDb.DB_TABLE;
 import static com.repon.first.providers.firstDb.delete;
 import static com.repon.first.providers.firstDb.rawquery;
 import static com.repon.first.providers.firstDb.update;
 
-public class second extends AppCompatActivity {
+public class Second extends AppCompatActivity {
 
     Context context = this;
     RelativeLayout m_second_R_main, m_second_R_item;
@@ -159,11 +159,11 @@ public class second extends AppCompatActivity {
 
     //標題按鈕監聽
     public void click(View view){
-        this.finish(); //關掉本頁
+        Second.this.finish(); //關掉本頁
 
         //開啟第一頁
         Intent it = new Intent();
-        it.setClass(this, first.class);
+        it.setClass(this, First.class);
         startActivity(it);
     }
 
@@ -259,7 +259,7 @@ public class second extends AppCompatActivity {
 
             }else if (m_second_R_main.getVisibility() == View.VISIBLE){ //主畫面顯示時
                 Intent it = new Intent();
-                it.setClass(context, first.class);
+                it.setClass(context, First.class);
                 startActivity(it); //執行跳頁
                 this.finish();
             }
