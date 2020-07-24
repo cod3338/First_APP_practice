@@ -34,6 +34,23 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/first_B_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_T_showtitle"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#4C4D57"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="clicksave"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/first_b_save"
+        android:textColor="@color/snow"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/first_T_input"
         android:layout_width="wrap_content"
@@ -101,23 +118,7 @@
         android:textSize="16sp" />
 
 
-    <Button
-        android:id="@+id/first_B_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/first_T_showtitle"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#4C4D57"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
 
-        android:onClick="clicksave"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="@string/first_b_save"
-        android:textColor="@color/snow"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
     <ProgressBar
         android:id="@+id/progressBar"
