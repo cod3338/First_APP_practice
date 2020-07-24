@@ -26,12 +26,33 @@
         android:layout_marginLeft="20dp"
         android:layout_toEndOf="@+id/first_T_hello"
         android:layout_toRightOf="@+id/first_T_hello"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/buttonshapeyellow"
         android:shadowColor="#4C4D57"
 
         android:text="@string/first_b_click"
         android:textColor="@color/snow"
         android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/first_B_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_T_showtitle"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#4C4D57"
+        android:layout_centerHorizontal="true"
+        android:onClick="clicksave"
+        android:layout_alignTop="@+id/first_T_hello"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/first_T_hello"
+        android:layout_toRightOf="@+id/first_T_hello"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/first_b_save"
+        android:textColor="@color/snow"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
@@ -41,7 +62,7 @@
         android:layout_below="@+id/first_T_hello"
         android:layout_alignStart="@+id/first_T_hello"
         android:layout_alignLeft="@+id/first_T_hello"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="100dp"
         android:text="@string/first_t_input"
         android:textColor="@color/black"
         android:textSize="16sp" />
@@ -49,7 +70,7 @@
     <ScrollView
         android:id="@+id/first_SC_sview"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/first_T_input"
         android:layout_alignStart="@+id/first_T_input"
         android:layout_alignLeft="@+id/first_T_input"
@@ -67,7 +88,7 @@
                 android:layout_below="@+id/first_T_input"
                 android:layout_alignStart="@+id/first_T_input"
                 android:layout_alignLeft="@+id/first_T_input"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="20dp"
                 android:background="@color/white"
                 android:textSize="16sp" />
@@ -101,23 +122,7 @@
         android:textSize="16sp" />
 
 
-    <Button
-        android:id="@+id/first_B_save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/first_T_showtitle"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#4C4D57"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
 
-        android:onClick="clicksave"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="@string/first_b_save"
-        android:textColor="@color/snow"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
     <ProgressBar
         android:id="@+id/progressBar"
